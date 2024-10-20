@@ -22,4 +22,7 @@ function createEvents() {
     document.querySelectorAll(".pixel").forEach(pixel => {
         pixel.addEventListener("mouseover", (event) => {event.target.classList.add("black")});
     });
+
+    document.getElementById("reset-button").onclick = (event) => {
+        document.querySelectorAll(".pixel").forEach(pixel => {pixel.classList.remove("black")})};
 }
